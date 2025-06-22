@@ -44,7 +44,7 @@ export default function Navigation() {
           <div className="flex items-center">
             <Link href="/">
               <h1 className="text-2xl font-bold text-primary cursor-pointer">
-                Premier Real Estate
+                Elevation Global Property
               </h1>
             </Link>
           </div>

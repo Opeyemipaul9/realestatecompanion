@@ -1,5 +1,5 @@
 import { properties, testimonials, contactMessages, type Property, type Testimonial, type ContactMessage, type InsertProperty, type InsertTestimonial, type InsertContactMessage } from "@shared/schema";
-import { db } from "./db";
+import {db} from "./db";
 import { eq } from "drizzle-orm";
 
 export interface IStorage {
@@ -191,8 +191,9 @@ export class DatabaseStorage implements IStorage {
   }
 
   async getProperty(id: number): Promise<Property | undefined> {
-    const [property] = await db.select().from(properties).where(eq(properties.id, id));
+    const [property] = await db.select().from(properties).where(eq(properties.id,id));
     return property || undefined;
+
   }
 
   async createProperty(insertProperty: InsertProperty): Promise<Property> {
@@ -224,4 +225,4 @@ export class DatabaseStorage implements IStorage {
   }
 }
 
-export const storage = new DatabaseStorage();
+export const storage =  new DatabaseStorage();
