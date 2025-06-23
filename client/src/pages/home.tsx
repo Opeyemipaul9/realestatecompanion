@@ -7,6 +7,10 @@ import ServiceCard from "@/components/service-card";
 import ContactForm from "@/components/contact-form";
 import { Home as HomeIcon, Key, TrendingUp, Handshake, Wrench, Calculator, MapPin, Phone, Mail, Clock, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import type { Property, Testimonial } from "@shared/schema";
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import SmartPhone from '@mui/icons-material/Smartphone';
+import MailIcon from '@mui/icons-material/Mail';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
 
 export default function Home() {
   const { data: properties, isLoading: propertiesLoading } = useQuery<Property[]>({
@@ -68,7 +72,7 @@ export default function Home() {
               Find Your <span className="text-accent">Dream Home</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-neutral-200 max-w-3xl mx-auto">
-              Premier real estate services with over 20 years of experience helping families find their perfect home
+              Elevation Global Property  services  helping families find their perfect home
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
@@ -206,37 +210,37 @@ export default function Home() {
               <div className="space-y-6">
                 <div className="flex items-start">
                   <div className="bg-primary bg-opacity-20 w-12 h-12 rounded-lg flex items-center justify-center mr-4 mt-1">
-                    <MapPin className="text-primary w-5 h-5" />
+                    <LocationOnIcon className="text-primary w-5 h-5" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg mb-1">Office Address</h4>
-                    <p className="text-neutral-300">123 Business Avenue<br />Beverly Hills, CA 90210</p>
+                    <p className="text-neutral-300">16 Browning Estate Elephant and Castle <br />London, England SE17 1DE </p>
                   </div>
                 </div>
 
                 <div className="flex items-start">
                   <div className="bg-primary bg-opacity-20 w-12 h-12 rounded-lg flex items-center justify-center mr-4 mt-1">
-                    <Phone className="text-primary w-5 h-5" />
+                    <SmartPhone className="text-primary w-5 h-5" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg mb-1">Phone Number</h4>
-                    <p className="text-neutral-300">(555) 123-4567</p>
+                    <p className="text-neutral-300"> +44 (739) 205-6881</p>
                   </div>
                 </div>
 
                 <div className="flex items-start">
                   <div className="bg-primary bg-opacity-20 w-12 h-12 rounded-lg flex items-center justify-center mr-4 mt-1">
-                    <Mail className="text-primary w-5 h-5" />
+                    <MailIcon className="text-primary w-5 h-5" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg mb-1">Email Address</h4>
-                    <p className="text-neutral-300">info@premierrealestate.com</p>
+                    <p className="text-neutral-300">Elevationglobalproperty@gmail.com</p>
                   </div>
                 </div>
 
                 <div className="flex items-start">
                   <div className="bg-primary bg-opacity-20 w-12 h-12 rounded-lg flex items-center justify-center mr-4 mt-1">
-                    <Clock className="text-primary w-5 h-5" />
+                    <AccessTimeIcon className="text-primary w-5 h-5" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg mb-1">Business Hours</h4>
@@ -248,16 +252,16 @@ export default function Home() {
               <div className="mt-8">
                 <h4 className="font-semibold text-lg mb-4">Follow Us</h4>
                 <div className="flex space-x-4">
-                  <a href="#" className="bg-primary bg-opacity-20 w-10 h-10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-200">
+                  <a href="https://www.facebook.com/share/1LQ8RP6YyY/?mibextid=wwXIfr" className="bg-primary bg-opacity-20 w-10 h-10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-200">
                     <Facebook className="text-white w-4 h-4" />
                   </a>
-                  <a href="#" className="bg-primary bg-opacity-20 w-10 h-10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-200">
+                  <a href="https://x.com/larrycypha01?s=11" className="bg-primary bg-opacity-20 w-10 h-10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-200">
                     <Twitter className="text-white w-4 h-4" />
                   </a>
-                  <a href="#" className="bg-primary bg-opacity-20 w-10 h-10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-200">
+                  <a href="https://www.instagram.com/elevation_global_property_?igsh=dHQ2b2NkYnU4Z21z&utm_source=qr" className="bg-primary bg-opacity-20 w-10 h-10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-200">
                     <Instagram className="text-white w-4 h-4" />
                   </a>
-                  <a href="#" className="bg-primary bg-opacity-20 w-10 h-10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-200">
+                  <a href="https://www.linkedin.com/in/michael-akinsehinde-1b258b359?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" className="bg-primary bg-opacity-20 w-10 h-10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-200">
                     <Linkedin className="text-white w-4 h-4" />
                   </a>
                 </div>
